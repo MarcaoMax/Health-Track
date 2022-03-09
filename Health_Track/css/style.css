@@ -1,0 +1,409 @@
+/* *{
+    border: 1px solid red;
+} */
+
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    background-image: url(../imagens/fundo.jpg);
+    padding: 5% 10% 10%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body .body {
+    min-height: 100vh;
+}
+
+.logoG{
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+label{
+    width: 400px;
+    height: 40px;
+    white-space: nowrap;
+}
+
+input{
+    width: 300px;
+    height: 35px;
+    background-color: white;
+    border: 3px solid #52add1;
+    border-radius: 7px;
+}
+
+#box1, #box2, .box3, .box4,#box1_1, #box2_1{
+    font-size: 2rem;
+}
+
+#box1_1{
+    margin-bottom: 10%;
+}
+
+.box3{
+    font-weight: bold;
+    color: rgb(8, 41, 150);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.rec,a:link,.lembrar{
+    font-weight: bold;
+    color: rgb(0, 29, 122);
+    text-decoration: none;
+    font-size: 17px;
+    /* nao cortar "frase" */
+    white-space: nowrap;
+}
+
+.caixa{
+    height: 20px;
+    border-color: 3px solid #52add1;
+    margin-right: -3%;
+}
+
+#entrar{
+    margin-top: 2%;
+    font-size: 45px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #52add1;
+    content: "Digite seu nome";
+}
+
+#criar{
+    margin-top: 5%;
+    margin-bottom: 30%;
+    font-size: 25px;
+    color: rgb(0, 29, 122);
+}
+
+#inp_nome,#inp_pass,#inp_nome2,#inp_pass2{
+    width: 100%;
+}
+
+.box3{
+    padding-top: 10%;
+}
+
+.goog,.face,.insta{
+    width: 60px;
+    height: 60px;
+}
+
+.barra,.barra2,.barra3 {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    margin-bottom: 15%;
+    width: 100vw;
+    height: 60px;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 30px 15px rgb(8, 41, 150);
+}
+
+.barra4,.barra4_2{
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 0px;
+    min-width: 100vw;
+    height: 80px;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 20px 15px rgb(90, 90, 90);
+}
+
+.barra2{
+    box-shadow: 0px 0px 20px 15px rgb(90, 90, 90);
+}
+
+.barra3{
+    box-shadow: 0px 0px 20px 15px #FD6F02;
+    z-index: 1;
+}
+
+.barra4_2{
+    box-shadow: 0px 0px 20px 15px #FD6F02;
+}
+
+#voltar,#perfil,#logop{
+    height: 40px;
+    display: inline-flex;
+}
+
+#voltar{
+    margin-left: 2%;
+    margin-right: 4%;
+    float: left;
+}
+
+#perfil,#pesoTop{
+    margin-left: 2%;
+    margin-right: 4%;
+    float: right;
+}
+
+#pesoTop{
+    height: 90%;
+}
+
+#logop,h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pesoTitulo{
+    width: 70%;
+    margin-left: 5%;
+    float: left;
+}
+
+.navIcones{
+    width: 100%;
+    height: 150px;
+    padding-top: 130px;
+}
+
+#navPeso{
+    box-shadow: 0px 0px 7px 10px #FD6F02;
+}
+
+.pesoPeriodo{
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    transform: translate(0%,-50%);
+    display: flex;
+}
+
+.periodo{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h3{
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.periodo:hover{
+    text-decoration: underline;
+    text-decoration-color: #FD6F02;
+    text-decoration-thickness: 10px;
+}
+
+.periodo:active {
+    text-decoration: underline;
+    text-decoration-color: #FD6F02;
+    text-decoration-thickness: 12px;
+}
+
+.espaco{
+    height: 10vh;
+}
+
+.espaco2{
+    height: 5vh;
+}
+
+.espaco3{
+    height: 10vh;
+}
+
+.icones{
+    height: 90%;
+    width: 90%;
+    border-radius:26%;
+    appearance: none;
+    box-shadow:inset 0px -100px 10px 0px rgba(104, 104, 104, 0.5);
+}
+
+a:active{
+  transform: translateY(4px);
+}
+
+.escolheData{
+    margin-top: 0%;
+    width: 100%;
+    display: flex;
+}
+
+.pesoSeta{
+    width: 5%;
+}
+
+.data h2{
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+.btnLinha{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.pesoGrafico {
+    width: 100%;
+}
+
+.btnPeso{
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    font-size: 1.5vh;
+    border-color: #c2c2c2;
+    background-color: white;
+    box-shadow: 0px 2px 0px 1px #FD6F02;
+}
+
+#adicionarPeso{
+    margin-right: 10%;
+}
+
+.listaPeso{
+    border: 2px solid black;
+    padding: 2%;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    margin-right: 10%;
+    margin-left: 3%;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.separador{
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 2%;
+    padding-left: 15%;
+}
+
+.separador p{
+    font-size: 1.2rem;
+}
+
+.telaToda{
+    width: 100%;
+    padding: 2%;
+}
+
+@media (max-width: 500px){
+    body .body{
+        min-height: 100vh;
+    }
+}
+
+@media (min-width:770px){
+    .pesoPeriodo {
+        width: 100%;
+        justify-content: left;
+        margin-left: 2%;
+        position: relative;
+        transform: translate(0%, -50%);
+        display: flex;
+    }
+
+
+}
+
+@media (min-width: 1200px){
+    .body{
+        padding: 2%;
+    }
+
+    .espaco4{
+        padding-top: 25%;
+    }
+
+    .flex{
+        display: flex;
+        padding-top: 10%;
+    }
+
+    .logoG{
+        width: 100%;
+        min-height: 150px;
+        padding-top: 2%;
+    }
+
+    .boxIndex {
+        width: 500px;
+        min-height: 110px;
+        padding-top: 5%;
+    }
+
+    label{
+        width: 110px;
+    }
+
+    #box1,#box2,#box1_1,#box2_1{
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    #inp_nome,#inp_pass,#inp_nome2,#inp_pass2 {
+        width: 100%;
+    }
+
+    .box3{
+        width: 500px;
+        min-height: 110px;
+        padding-top: 35%;
+    }
+
+    .espaco3{
+        height: 30%;
+    }
+
+    .btnPeso {
+        white-space: nowrap;
+    }
+
+    .pesoPeriodo {
+        margin-bottom: 30%;
+    }
+
+    .escolheData{
+        margin-top: 10%;
+    }
+
+    .listaPeso{
+        height: 80%;
+        margin-top: 5%;
+        margin-left: 1%;
+    }
+
+}
+
+@media (min-width: 1870px) {
+    .pesoPeriodo {
+        margin-left: 0;
+    }
+
+}
